@@ -1,0 +1,160 @@
+/* GENEL */
+body {
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(120deg, #f8f9fa, #ffffff);
+}
+.btn{
+ background: linear-gradient(135deg, #e84c4e 0%, #ee8051 50%, #f4ab7a 100%);
+ color: #fff;
+ border: none;
+
+}
+.btn:hover{
+    background: linear-gradient(135deg, #7e8a8b 0%, #9aa7a8 50%, #bcc8c9 100%);
+    color: #fff;
+}
+
+
+/* SOLUTION CARD */
+.solutions-card .icon {
+  color:#e84c4e;
+}
+.solutions-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.solutions-card:hover h5 {
+  transform: scale(1.12);
+}
+
+.solutions-card:hover .icon {
+  transform: scale(1.25) ;
+
+}
+
+
+/* WHY CARD */
+#why {
+
+background: linear-gradient(135deg, #e84c4e 0%, #ee8051 50%, #f4ab7a 100%);
+
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.why-card {
+  background: #fff;
+  border-radius: 14px;
+  border: none;
+  color: #212529;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.why-card:nth-child(1) { animation-delay: 0.1s; }
+.why-card:nth-child(2) { animation-delay: 0.3s; }
+.why-card:nth-child(3) { animation-delay: 0.5s; }
+.why-card:nth-child(4) { animation-delay: 0.7s; }
+
+.why-card .icon {
+  color: #212529;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.why-card h5 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.why-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.why-card:hover h5 {
+  transform: scale(1.12);
+  color: #e84c4e;
+}
+
+.why-card:hover .icon {
+  transform: scale(1.25) ;
+  color: #e84c4e;
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* REFERANSLAR SLIDER */
+#references .testimonial {
+  display: none;
+  transition: opacity 0.5s ease;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#references .testimonial.active {
+  display: block;
+  opacity: 1;
+}
+
+#references .testimonial p {
+  font-style: italic;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+#references .testimonial h6 {
+  margin-top: 15px;
+  color: #e84c4e;
+  font-weight: bold;
+}
+
+/* Dot navigasyon */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dots span.active {
+  background: #e84c4e;
+  transform: scale(1.2);
+}
+.testimonial-img{
+  border-radius: 50%;
+
+}
+#pricing{
+  background: linear-gradient(135deg, #116466, #88BDBC);
+color:#fff;
+}
+#pricing h3{
+  color: #2B3737;
+}
